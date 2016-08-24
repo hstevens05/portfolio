@@ -12,6 +12,12 @@ body {
 
 }
 
+h1 {
+	padding-left: 30px;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -21,7 +27,6 @@ body {
 	height: 60px;
 	width: 100%;
 	background-color: grey;
-	box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
 }
 
 .button-nav {
@@ -69,23 +74,21 @@ body {
 	display: none;
 }
 
-.content {
-	display: block;
-	margin-top: 100px;
+.intro-mobile {
+	margin-top: 60px;
+	width: 100%;
+
 }
 
-h1 {
-	padding-left: 30px;
-	font-size: 1.75em;
+.intro-tablet {
+	display: none;
+}
+
+.intro-desk {
+	display: none;
 }
 
 
-
-@media (min-width: 480px) {
-
-
-
-} 
 
 @media (min-width: 600px) {
 	.dropbtn {
@@ -96,13 +99,18 @@ h1 {
 		display: block;
 		width: 40%;
 		right: 0;
-				margin-right: 25px;
+		margin-right: 25px;
+	}
+
+	h1 {
+		font-size: 1.75em;
 	}
 
 	ul {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		margin-top: 5px;
 		height: 60px;
 		font-size: 1.2em;
 
@@ -111,7 +119,7 @@ h1 {
 	li a {
 	text-decoration: none;
 	color: black;
-	padding: 10px 5px;
+	padding: 15px 10px 10px 10px;
 
 	}
 
@@ -124,13 +132,33 @@ h1 {
 		color: white;
 	}
 
+	.intro-mobile {
+		display: none;
+	}
+
+	.intro-tablet {
+		margin-top: 60px;
+		display: block;
+		width: 100%;
+	}
+
 }
 
 @media (min-width: 800px) {
 
 		.menu-nav {
 			width: 30%;
-	}
+		}
+
+		.intro-tablet {
+			display: none;
+		}
+
+		.intro-desk {
+			display: block;
+			margin-top: 60px;
+			width: 100%;
+		}
 }
 
 
