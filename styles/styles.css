@@ -1,0 +1,142 @@
+@import 'cssreset.css';
+
+@font-face {
+	font-family: roboto-reg;
+	src: url("../fonts/Roboto-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	font-family: roboto-reg;
+
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	height: 60px;
+	width: 100%;
+	background-color: grey;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+}
+
+.button-nav {
+	padding-right: 10px;
+}
+
+.nav-dropdown {
+	display: none;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	margin-top: 7px;
+}
+
+.nav-dropdown a {
+	color: black;
+	background-color: darkgrey;
+    padding: 12px 16px;
+    height: 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.nav-dropdown a:hover {
+	background-color: grey;
+}
+
+.dropbtn {
+	background-color: grey;
+	border: none;
+	padding: 10px 15px;
+	font-size: 1.2em;
+}
+
+.dropbtn:hover {
+	background-color: darkgrey;
+}
+
+.show {
+	display: block;
+}
+
+.menu-nav {
+	display: none;
+}
+
+.content {
+	display: block;
+	margin-top: 100px;
+}
+
+h1 {
+	padding-left: 30px;
+	font-size: 1.75em;
+}
+
+
+
+@media (min-width: 480px) {
+
+
+
+} 
+
+@media (min-width: 600px) {
+	.dropbtn {
+		display: none;
+	}
+
+	.menu-nav {
+		display: block;
+		width: 40%;
+		right: 0;
+				margin-right: 25px;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 60px;
+		font-size: 1.2em;
+
+	}
+
+	li a {
+	text-decoration: none;
+	color: black;
+	padding: 10px 5px;
+
+	}
+
+	li a:hover {
+		color: white;
+	}
+
+	li a:active {
+		background-color: darkgrey;
+		color: white;
+	}
+
+}
+
+@media (min-width: 800px) {
+
+		.menu-nav {
+			width: 30%;
+	}
+}
+
+
+@media (min-width: 1240px) {
+
+		.menu-nav {
+			width: 20%;
+	}
+}
