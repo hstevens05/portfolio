@@ -9,24 +9,51 @@
 
 body {
 	font-family: roboto-reg;
-
+	background-image: url("../images/concrete_seamless.png");
 }
 
 h1 {
+	color: #423e3e;
 	padding-left: 30px;
 	font-size: 1.5em;
 	text-transform: uppercase;
 }
 
-.header {
+h2 {
+	margin: 50px 25px 0 25px;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+strong {
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.intro-text {
+	text-align: center;
+	font-size: 1em;
+	margin: 30px 0;
+	width: 80%;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-bar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
 	top: 0;
-	height: 60px;
+	height: 50px;
 	width: 100%;
-	background-color: grey;
+	background-color: #686162;
 }
 
 .button-nav {
@@ -38,32 +65,35 @@ h1 {
 	position: absolute;
 	right: 0;
 	width: 100%;
-	margin-top: 7px;
+	margin-top: 0px;
 }
 
 .nav-dropdown a {
-	color: black;
-	background-color: darkgrey;
+	color: #423e3e;
+	background-color: #908889;
     padding: 12px 16px;
     height: 20px;
     text-decoration: none;
     display: block;
     text-align: center;
+
 }
 
 .nav-dropdown a:hover {
-	background-color: grey;
+	background-color: #686162;
 }
 
 .dropbtn {
-	background-color: grey;
+	background-color: #686162;
+	color: #423e3e;
 	border: none;
 	padding: 10px 15px;
 	font-size: 1.2em;
+	transition: color 0.5s ease;
 }
 
 .dropbtn:hover {
-	background-color: darkgrey;
+	color: #908889;
 }
 
 .show {
@@ -74,23 +104,76 @@ h1 {
 	display: none;
 }
 
-.intro-mobile {
-	margin-top: 60px;
+.header-mobile {
+	margin-top: 50px;
 	width: 100%;
 
 }
 
-.intro-tablet {
+.header-tablet {
 	display: none;
 }
 
-.intro-desk {
+.header-desk {
 	display: none;
 }
 
+.samples {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.samples img {
+	width: 40%;
+	margin: 10px;
+	border: 2px solid #908889;
+}
+
+.copyright {
+	text-align: center;
+	margin: 20px 0;
+	width: 100%;
+	font-size: 0.8em;
+	color: #908889;
+}
 
 
 @media (min-width: 600px) {
+
+
+	h1 {
+		font-size: 1.75em;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 5px;
+		height: 50px;
+		font-size: 1.2em;
+
+	}
+
+	li a {
+	text-decoration: none;
+	color: #423e3e;
+	padding: 15px 10px 10px 10px;
+	transition: color 0.5s ease;
+
+	}
+
+	li a:hover {
+		color: #908889;
+	}
+
+	li a:active {
+		background-color: #acacac;
+		color: white;
+	}
+
 	.dropbtn {
 		display: none;
 	}
@@ -102,42 +185,12 @@ h1 {
 		margin-right: 25px;
 	}
 
-	h1 {
-		font-size: 1.75em;
-	}
-
-	ul {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		margin-top: 5px;
-		height: 60px;
-		font-size: 1.2em;
-
-	}
-
-	li a {
-	text-decoration: none;
-	color: black;
-	padding: 15px 10px 10px 10px;
-
-	}
-
-	li a:hover {
-		color: white;
-	}
-
-	li a:active {
-		background-color: darkgrey;
-		color: white;
-	}
-
-	.intro-mobile {
+	.header-mobile {
 		display: none;
 	}
 
-	.intro-tablet {
-		margin-top: 60px;
+	.header-tablet {
+		margin-top: 50px;
 		display: block;
 		width: 100%;
 	}
@@ -146,18 +199,34 @@ h1 {
 
 @media (min-width: 800px) {
 
+		h2 {
+			font-size: 2em;
+		}
+
 		.menu-nav {
 			width: 30%;
 		}
 
-		.intro-tablet {
+		.header-tablet {
 			display: none;
 		}
 
-		.intro-desk {
+		.header-desk {
 			display: block;
-			margin-top: 60px;
+			margin-top: 50px;
 			width: 100%;
+		}
+
+		.samples img {
+			width: 28%;
+		}
+
+		.intro-text {
+			width: 50%;
+		}
+
+		.copyright {
+			font-size: 1em;
 		}
 }
 
