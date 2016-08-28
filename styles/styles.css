@@ -9,7 +9,7 @@
 
 body {
 	font-family: roboto-reg;
-
+	background-image: url("../images/concrete_seamless.png");
 }
 
 h1 {
@@ -45,7 +45,7 @@ strong {
 	align-items: center;
 }
 
-.header {
+.nav-bar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -104,17 +104,17 @@ strong {
 	display: none;
 }
 
-.intro-mobile {
+.header-mobile {
 	margin-top: 50px;
 	width: 100%;
 
 }
 
-.intro-tablet {
+.header-tablet {
 	display: none;
 }
 
-.intro-desk {
+.header-desk {
 	display: none;
 }
 
@@ -141,16 +141,7 @@ strong {
 
 
 @media (min-width: 600px) {
-	.dropbtn {
-		display: none;
-	}
 
-	.menu-nav {
-		display: block;
-		width: 40%;
-		right: 0;
-		margin-right: 25px;
-	}
 
 	h1 {
 		font-size: 1.75em;
@@ -183,11 +174,22 @@ strong {
 		color: white;
 	}
 
-	.intro-mobile {
+	.dropbtn {
 		display: none;
 	}
 
-	.intro-tablet {
+	.menu-nav {
+		display: block;
+		width: 40%;
+		right: 0;
+		margin-right: 25px;
+	}
+
+	.header-mobile {
+		display: none;
+	}
+
+	.header-tablet {
 		margin-top: 50px;
 		display: block;
 		width: 100%;
@@ -205,11 +207,11 @@ strong {
 			width: 30%;
 		}
 
-		.intro-tablet {
+		.header-tablet {
 			display: none;
 		}
 
-		.intro-desk {
+		.header-desk {
 			display: block;
 			margin-top: 50px;
 			width: 100%;
