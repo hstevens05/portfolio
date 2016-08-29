@@ -7,13 +7,20 @@
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: blackjack;
+	src: url("../fonts/blackjack.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
 body {
 	font-family: roboto-reg;
 	background-image: url("../images/concrete_seamless.png");
 }
 
 h1 {
-	color: #423e3e;
+	color: #2f2c2c;
 	padding-left: 30px;
 	font-size: 1.5em;
 	text-transform: uppercase;
@@ -26,10 +33,32 @@ h2 {
 	font-weight: bold;
 }
 
+h3 {
+	margin: 30px 0 25px 0;
+	color: #ff3432;
+	font-size: 2.5em;
+	font-family: blackjack;
+}
+
 strong {
 	color: red;
 	font-weight: bold;
 	font-style: italic;
+}
+
+p {
+	margin: 10px;
+	font-size: 1em;
+}
+
+a {
+	color: #ff3432;
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
+
+a:hover {
+	color: #ff9999;
 }
 
 .intro-text {
@@ -69,7 +98,7 @@ strong {
 }
 
 .nav-dropdown a {
-	color: #423e3e;
+	color: #2f2c2c;
 	background-color: #908889;
     padding: 12px 16px;
     height: 20px;
@@ -85,7 +114,7 @@ strong {
 
 .dropbtn {
 	background-color: #686162;
-	color: #423e3e;
+	color: #2f2c2c;
 	border: none;
 	padding: 10px 15px;
 	font-size: 1.2em;
@@ -131,6 +160,31 @@ strong {
 	border: 2px solid #908889;
 }
 
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 80px;
+}
+
+
+.this-is-me {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60%;
+}
+
+.about-me-paragraph {
+	width: 85%;
+}
+
+.my-image {
+	border-radius: 50%;
+	border: 5px solid #2f2c2c;
+	width: 100%;
+}
+
 .copyright {
 	text-align: center;
 	margin: 20px 0;
@@ -159,7 +213,7 @@ strong {
 
 	li a {
 	text-decoration: none;
-	color: #423e3e;
+	color: #2f2c2c;
 	padding: 15px 10px 10px 10px;
 	transition: color 0.5s ease;
 
@@ -195,45 +249,92 @@ strong {
 		width: 100%;
 	}
 
+	.this-is-me {
+		width: 40%;
+	}
+
 }
 
 @media (min-width: 800px) {
 
-		h2 {
-			font-size: 2em;
-		}
+	h2 {
+		font-size: 2em;
+	}
 
-		.menu-nav {
-			width: 30%;
-		}
+	p {
+		margin: 10px 0;
+	}
 
-		.header-tablet {
-			display: none;
-		}
+	.menu-nav {
+		width: 30%;
+	}
 
-		.header-desk {
-			display: block;
-			margin-top: 50px;
-			width: 100%;
-		}
+	.header-tablet {
+		display: none;
+	}
 
-		.samples img {
-			width: 28%;
-		}
+	.header-desk {
+		display: block;
+		margin-top: 50px;
+		width: 100%;
+	}
 
-		.intro-text {
-			width: 50%;
-		}
+	.samples img {
+		width: 28%;
+	}
 
-		.copyright {
-			font-size: 1em;
-		}
+	.intro-text {
+		width: 50%;
+	}
+
+	.copyright {
+		font-size: 1em;
+	}
+
+	.about {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+		margin-top: 100px;
+	}
+
+	.this-is-me {
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		margin-left: 25px;
+	}
+
+	.about-me-paragraph {
+		width: 50%;
+	}
+
+
 }
 
 
 @media (min-width: 1240px) {
 
-		.menu-nav {
-			width: 20%;
+	.menu-nav {
+		width: 20%;
 	}
+
+	.this-is-me {
+		width: 20%;
+	}	
+
+	.about {
+		justify-content: center;
+		min-height: 1vh;
+	}
+
+	.about-me-paragraph{
+		margin-left: 50px;
+	}
+
+	.copyright {
+		align-self: flex-end;
+	}
+
+
 }
