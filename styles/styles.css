@@ -17,6 +17,9 @@
 body {
 	font-family: roboto-reg;
 	background-image: url("../images/concrete_seamless.png");
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 h1 {
@@ -33,11 +36,25 @@ h2 {
 	font-weight: bold;
 }
 
-h3 {
-	margin: 30px 0 25px 0;
+h3,h4 {
+
 	color: #ff3432;
 	font-size: 2.5em;
 	font-family: blackjack;
+}
+
+h3 {
+	margin: 30px 0 25px 0;
+}
+
+h4 {
+	margin-left: 25px;
+}
+
+h5 {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-top: 10px;
 }
 
 strong {
@@ -48,7 +65,16 @@ strong {
 
 p {
 	margin: 10px;
+	padding-bottom: 10px;
 	font-size: 1em;
+	color: #2f2c2c;
+	line-height: 1.2;
+}
+
+.form p {
+	margin-left: 25px;
+	padding: 10px 0;
+	width: 90%;
 }
 
 a {
@@ -59,6 +85,53 @@ a {
 
 a:hover {
 	color: #ff9999;
+}
+
+form {
+	margin-left: 25px;
+	max-width: 450px;
+}
+
+input[type=text] {
+	border-radius: 5px;
+	margin: 10px 0 10px 0;
+	border: 1px solid #2f2c2c;
+	padding: 5px;
+	width: 90%;
+
+}
+
+input#message {
+	width: 90%;
+	height: 80px;
+}
+
+input[type=submit] {
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 1px solid #2f2c2c;
+	margin-top: 5px;
+	background-color: #908889;
+	transition: background-color 0.5s ease;
+}
+
+input[type=submit]:hover {
+	background-color: #ff3432;
+}
+
+label {
+	color: #ff3432;
+}
+
+footer {
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #908889;
+}
+
+.site {
+	flex: 1;
 }
 
 .intro-text {
@@ -151,7 +224,7 @@ a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 10px;
+	margin: 10px 0 10px 0;
 }
 
 .samples img {
@@ -172,7 +245,7 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 60%;
+	width: 50%;
 }
 
 .about-me-paragraph {
@@ -185,13 +258,18 @@ a:hover {
 	width: 100%;
 }
 
-.copyright {
-	text-align: center;
-	margin: 20px 0;
-	width: 100%;
-	font-size: 0.8em;
-	color: #908889;
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 85px;
 }
+
+.sidebar {
+	margin: 30px 0 0 25px;
+	padding-bottom: 2rem;
+}
+
 
 
 @media (min-width: 600px) {
@@ -280,7 +358,7 @@ a:hover {
 	}
 
 	.intro-text {
-		width: 50%;
+		width: 70%;
 	}
 
 	.copyright {
@@ -305,7 +383,16 @@ a:hover {
 		width: 50%;
 	}
 
+	.contact {
+		flex-direction: row;
+	}
 
+	.sidebar {
+		margin: 50px 5% 0 0;
+		padding: 20px;
+		width: 30%;
+		border: 1px solid #908889;
+	}
 }
 
 
@@ -327,10 +414,16 @@ a:hover {
 		margin-left: 50px;
 	}
 
-	.copyright {
-		position: absolute;
-		bottom: 0;
+	.form {
+		width: 40%;
 	}
 
+	.contact {
+		justify-content: center;
+	}
+
+	.sidebar {
+		width: 20%;
+	}
 
 }
