@@ -224,6 +224,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	max-width: 1300px;
 	margin: 10px 0 10px 0;
 }
 
