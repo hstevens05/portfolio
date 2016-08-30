@@ -71,12 +71,6 @@ p {
 	line-height: 1.2;
 }
 
-.form p {
-	margin-left: 25px;
-	padding: 10px 0;
-	width: 90%;
-}
-
 a {
 	color: #ff3432;
 	text-decoration: none;
@@ -87,9 +81,30 @@ a:hover {
 	color: #ff9999;
 }
 
+/*Footer on all pages*/
+
+footer {
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #908889;
+}
+
+/*Form on contact page*/
+
 form {
 	margin-left: 25px;
 	max-width: 450px;
+}
+
+.form p {
+	margin-left: 25px;
+	padding: 10px 0;
+	width: 90%;
+}
+
+label {
+	color: #ff3432;
 }
 
 input[type=text] {
@@ -98,7 +113,6 @@ input[type=text] {
 	border: 1px solid #2f2c2c;
 	padding: 5px;
 	width: 90%;
-
 }
 
 input#message {
@@ -119,33 +133,16 @@ input[type=submit]:hover {
 	background-color: #ff3432;
 }
 
-label {
-	color: #ff3432;
-}
 
-footer {
-	padding-bottom: 5px;
-	text-align: center;
-	font-size: 0.8em;
-	color: #908889;
-}
+
+/*Container around page contents to push footer to the bottom of the page*/
 
 .site {
 	flex: 1;
 }
 
-.intro-text {
-	text-align: center;
-	font-size: 1em;
-	margin: 30px 0;
-	width: 80%;
-}
 
-.intro {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+/*Nav Bar*/
 
 .nav-bar {
 	display: flex;
@@ -158,9 +155,34 @@ footer {
 	background-color: #686162;
 }
 
+/*Button style of navigation for mobile*/
+
 .button-nav {
 	padding-right: 10px;
 }
+
+/*Button that creates dropdown menu*/
+
+.dropbtn {
+	background-color: #686162;
+	color: #2f2c2c;
+	border: none;
+	padding: 10px 15px;
+	font-size: 1.2em;
+	transition: color 0.5s ease;
+}
+
+.dropbtn:hover {
+	color: #908889;
+}
+
+/*Property that allows the menu to actually show*/
+
+.show {
+	display: block;
+}
+
+/*Dropdown menu for mobile*/
 
 .nav-dropdown {
 	display: none;
@@ -185,32 +207,21 @@ footer {
 	background-color: #686162;
 }
 
-.dropbtn {
-	background-color: #686162;
-	color: #2f2c2c;
-	border: none;
-	padding: 10px 15px;
-	font-size: 1.2em;
-	transition: color 0.5s ease;
-}
-
-.dropbtn:hover {
-	color: #908889;
-}
-
-.show {
-	display: block;
-}
+/*Menu navigation style - toggled off for mobile*/
 
 .menu-nav {
 	display: none;
 }
+
+/*Beginning of portfolio page content*/
 
 .portfolio-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
+/*Header image that changes depending on screen size, so tablet/desk are toggled off*/
 
 .header-mobile {
 	margin-top: 50px;
@@ -226,6 +237,23 @@ footer {
 	display: none;
 }
 
+/*Portfolio page intro text*/
+
+.intro-text {
+	text-align: center;
+	font-size: 1em;
+	margin: 30px 0;
+	width: 80%;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*Website sample images*/
+
 .samples {
 	display: flex;
 	flex-wrap: wrap;
@@ -240,6 +268,8 @@ footer {
 	margin: 10px;
 	border: 2px solid #908889;
 }
+
+/*About page*/
 
 .about {
 	display: flex;
@@ -266,6 +296,9 @@ footer {
 	width: 100%;
 }
 
+
+/*Contact page*/
+
 .contact {
 	display: flex;
 	flex-direction: column;
@@ -286,6 +319,8 @@ footer {
 	h1 {
 		font-size: 1.75em;
 	}
+
+	/*List for menu navigation style with three links*/
 
 	ul {
 		display: flex;
@@ -314,9 +349,7 @@ footer {
 		color: white;
 	}
 
-	.dropbtn {
-		display: none;
-	}
+/*Toggle the menu style navigation on and the button off*/
 
 	.menu-nav {
 		display: block;
@@ -324,6 +357,13 @@ footer {
 		right: 0;
 		margin-right: 25px;
 	}
+
+	.dropbtn {
+		display: none;
+	}
+
+
+/*Change the header for the tablet sized layout*/
 
 	.header-mobile {
 		display: none;
@@ -334,6 +374,8 @@ footer {
 		display: block;
 		width: 100%;
 	}
+
+/*Alter my image size on about page for wider layout*/
 
 	.this-is-me {
 		width: 40%;
@@ -347,9 +389,13 @@ footer {
 		font-size: 2em;
 	}
 
+/*Menu navigation width shrinks for wider screen*/
+
 	.menu-nav {
 		width: 30%;
 	}
+
+/*Toggle the desktop sized header image*/
 
 	.header-tablet {
 		display: none;
@@ -361,6 +407,8 @@ footer {
 		width: 100%;
 	}
 
+/*Adjust sample image sizes and intro text width for portfolio page*/
+
 	.samples img {
 		width: 28%;
 	}
@@ -369,9 +417,7 @@ footer {
 		width: 70%;
 	}
 
-	.copyright {
-		font-size: 1em;
-	}
+/*Change the about page to shift my paragraph to the side instead of underneath the image*/
 
 	.about {
 		flex-direction: row;
@@ -391,6 +437,8 @@ footer {
 		width: 50%;
 	}
 
+/*Change the contact page to shift my contact details to the side instead of underneath the form*/
+
 	.contact {
 		flex-direction: row;
 	}
@@ -406,14 +454,19 @@ footer {
 
 @media (min-width: 1240px) {
 
+/*Change menu navigation width*/
+
 	.menu-nav {
 		width: 20%;
 	}
+
+/*Shrink my image once more*/
 
 	.this-is-me {
 		width: 20%;
 	}	
 
+/*Align the about page to be centered and give max-width to keep it from expanding too much*/
 	.about {
 		justify-content: center;
 	}
@@ -423,6 +476,7 @@ footer {
 		max-width: 750px;
 	}
 
+/*Align the contact page to be centered and give widths to keep it from expanding too much*/
 	.form {
 		width: 40%;
 		max-width: 600px;
