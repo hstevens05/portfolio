@@ -206,6 +206,12 @@ footer {
 	display: none;
 }
 
+.portfolio-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .header-mobile {
 	margin-top: 50px;
 	width: 100%;
