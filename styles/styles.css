@@ -261,10 +261,6 @@ a:hover {
 		font-size: 2em;
 	}
 
-	p {
-		margin: 10px 0;
-	}
-
 	.menu-nav {
 		width: 30%;
 	}
@@ -325,7 +321,6 @@ a:hover {
 
 	.about {
 		justify-content: center;
-		min-height: 1vh;
 	}
 
 	.about-me-paragraph{
@@ -333,7 +328,8 @@ a:hover {
 	}
 
 	.copyright {
-		align-self: flex-end;
+		position: absolute;
+		bottom: 0;
 	}
 
 
