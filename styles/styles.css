@@ -17,7 +17,9 @@
 body {
 	font-family: roboto-reg;
 	background-image: url("../images/concrete_seamless.png");
-	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 h1 {
@@ -99,7 +101,7 @@ input[type=text] {
 
 input#message {
 	width: 90%;
-	height: 100px;
+	height: 80px;
 }
 
 input[type=submit] {
@@ -120,12 +122,14 @@ label {
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+	padding-bottom: 5px;
 	text-align: center;
 	font-size: 0.8em;
 	color: #908889;
+}
+
+.site {
+	flex: 1;
 }
 
 .intro-text {
@@ -218,7 +222,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 10px 0 50px 0;
+	margin: 10px 0 10px 0;
 }
 
 .samples img {
