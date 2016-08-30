@@ -412,10 +412,12 @@ footer {
 
 	.about-me-paragraph{
 		margin-left: 50px;
+		max-width: 750px;
 	}
 
 	.form {
 		width: 40%;
+		max-width: 600px;
 	}
 
 	.contact {
@@ -424,6 +426,7 @@ footer {
 
 	.sidebar {
 		width: 20%;
+		max-width: 400px;
 	}
 
 }
