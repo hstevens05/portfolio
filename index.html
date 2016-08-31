@@ -16,34 +16,36 @@
 
 	<div class="site">
 		<div class="nav-bar">
-			<div class="logo"><h1>Heather Stevens</h1></div>
+			<div class="logo"><h1 class="darkgrey">Heather Stevens</h1></div>
 
 			<div class="button-nav">
-				<button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				<button onclick="navButton()" class="dropbtn darkgrey">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
 				<div id="nav-dropdown" class="nav-dropdown">
-					<a href="index.html">Portfolio</a>
-					<a href="about.html">About</a>
-					<a href="contact.html">Contact</a>
+					<a href="index.html" class="darkgrey menu">Portfolio</a>
+					<a href="about.html" class="darkgrey menu">About</a>
+					<a href="contact.html" class="darkgrey menu">Contact</a>
 				</div>
 			</div>
 
 			<div class="menu-nav">
 				<ul>
-					<li><a href="index.html">Portfolio</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.html" class="darkgrey">Portfolio</a></li>
+					<li><a href="about.html" class="darkgrey">About</a></li>
+					<li><a href="contact.html" class="darkgrey">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="portfolio-content">
 			<img class="header-mobile" src="images/intro-mob.jpg" alt="Heather Stevens Front-End Developer based in Toronto" />
-			<img class="header-tablet" src="images/intro-tab.jpg" alt="Heather Stevens Front-End Developer based in Toronto">
+			<img class="header-tablet" src="images/intro-tab.jpg" alt="Heather Stevens Front-End Developer based in Toronto" />
 			<img class="header-desk" src="images/intro-dsk.jpg" alt="Heather Stevens Front-End Developer based in Toronto" />
 
 			<div class="intro">
-				<h2>I won't rest until you have a site that makes you go <strong>WOW!</strong></h2>
-				<p class="intro-text">Here are a few examples of some work that I haven't done yet because I've never made anything, but it gives you an idea of what the layout would look like. Voila!</p>
+				<h2>I won't rest until you have a site that makes you go <strong class="red">WOW!</strong></h2>
+				<p class="intro-text darkgrey">Here are a few examples of some work that I haven't done yet because I've never made anything, but it gives you an idea of what the layout would look like. Voila!</p>
 			</div>
 
 			<div class="samples">
@@ -58,12 +60,12 @@
 	</div>
 
 	<footer>
-		<p>&copy; Heather Stevens 2016</p>
+		<p class="lightgrey">&copy; Heather Stevens 2016</p>
 	</footer>
 
 
 	<script>
-		function myFunction() {
+		function navButton() {
 			document.getElementById("nav-dropdown").classList.toggle("show");
 		}
 	</script>
