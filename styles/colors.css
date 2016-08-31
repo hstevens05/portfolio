@@ -1,0 +1,76 @@
+/*General link hover color*/
+
+a:hover {
+	color: #ff9999;
+}
+
+/*Nav bar colors*/
+
+.nav-bar {
+	background-color: #686162;
+}
+
+.dropbtn {
+	background-color: #686162;
+}
+
+.dropbtn:hover {
+	color: #908889;
+}
+
+.nav-dropdown a {
+	background-color: #908889;
+}
+
+.nav-dropdown a:hover {
+	background-color: #686162;
+}
+
+.menu:hover {
+	color: #908889;
+}
+
+/*Form colors*/
+
+input[type=submit] {
+	background-color: #908889;
+	transition: background-color 0.5s ease;
+}
+
+input[type=submit]:hover {
+	background-color: #ff3432;
+}
+
+/*Nav bar link colors for tablet or larger*/
+
+@media (min-width: 600px) {
+
+	li a:hover {
+		color: #908889;
+	}
+
+	li a:active {
+		background-color: #acacac;
+		color: white;
+	}
+}
+
+
+
+/*COLOR CLASSES*/
+
+.red {
+	color: #ff3432;
+}
+
+.lightgrey {
+	color: #908889;
+}
+
+.mediumgrey {
+	color: #686162;
+}
+
+.darkgrey {
+	color: #2f2c2c;
+}
